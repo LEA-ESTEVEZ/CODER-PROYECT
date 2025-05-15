@@ -1,0 +1,398 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*BODY*/
+
+
+body {
+  
+    background-color:rgba(199, 199, 88, 0.733) ;
+    margin: 2px;
+   
+    }
+    .titulocentral{
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+
+h1 {
+    width: 80%;
+    color: rgba(161, 89, 228, 0.767);
+    font-size: 35px;
+    font-style: oblique;
+    font-family: "Limelight", sans-serif;
+    background-color: rgba(228, 151, 89, 0.562);
+    text-align: center;
+    text-decoration:double underline;
+    padding: 10px
+}
+
+
+
+h2{
+    color: rgba(161, 89, 228, 0.767);
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+    background-color:rgba(228, 151, 89, 0.562);
+    text-decoration: underline;
+    list-style:disc;
+}
+
+li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+p {
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 10px;
+
+}
+/*Pag. Presupuestos*/
+form {
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(228, 151, 89, 0.562); 
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   
+}
+.presupuesto{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+/*Pag. Comentarios*/
+.comentarios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    
+ 
+}
+
+/*Pag. Home (imagenes)*/
+
+.fotos img{
+
+margin: 50px 0px;
+width: 30%;
+
+
+}
+.fotos{
+    display: flex;
+    justify-content: space-evenly;
+}
+  /*Pag. Productos*/
+.Productos1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 60px
+ }
+ .picadas img{
+    width: 40%;
+    height: auto;
+ }
+ .picadas{
+    display: flex;
+    justify-content: center;
+  }
+  .Sandwiches img{
+    width: 40%;
+    height: auto;
+
+  }
+  .Sandwiches{ 
+     display: flex;
+    justify-content: space-around;
+}
+.Empanadas img{
+    width: 40%;
+    height: auto;
+ 
+}
+.Empanadas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetas{ 
+    display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+/* Pag. contacto*/
+
+.mapa{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    width: 100%;
+
+}
+.mapa iframe{
+    width: 80%;
+}
+
+/* HEADER */
+header {
+    background-color: rgba(228, 151, 89, 0.562);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 10px 20px;
+    width: 100%;
+
+ 
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+header a {
+    font-family: "Limelight", sans-serif;
+    color:white;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: rgba(161, 89, 228, 0.767);;
+
+
+}
+header ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+
+}
+header img{width: 90%;}
+
+
+    /* REDES SOCIALES */
+.redes{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.redes img {
+    width: 50px;
+   
+}
+
+
+/*FOOTER*/
+footer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p{
+    font-family: "Limelight", sans-serif;
+    text-align: center;
+    font-style: oblique;
+    color: rgba(161, 89, 228, 0.767);
+    background-color: rgba(228, 151, 89, 0.562);
+    padding: 5px;
+    }
+
+    /*GRID--------------------------------------------------*/
+
+.pag-home{
+    display: grid;
+    grid-template-areas: 
+    "header main main"
+    "header main main"
+    "header main main"
+    "header footer footer";
+
+
+    grid-template-columns: 0.5fr 1fr 2fr;
+    grid-template-rows: 80px repeat(2,400px) 80px;
+    justify-content: center;
+   justify-items: center;
+
+
+
+    .header{grid-area: header;}
+    .main{grid-area: main;}
+    .footer{grid-area: footer;margin-top: 30px;}
+
+}
+
+.pag-presupuestos{
+    display: grid;
+    grid-template-areas: 
+    "header main main"
+    "header main main"
+    "header main main"
+    "header footer footer";
+
+
+    grid-template-columns: 0.5fr 1fr 2fr;
+    grid-template-rows: 80px repeat(2,400px) 80px;
+    justify-content: center;
+   justify-items: center;
+
+   .header{grid-area: header;}
+   .main{grid-area: main;}
+   .footer{grid-area: footer;margin-top: 30px;}
+
+}
+
+.pag-productos{
+    display: grid;
+    grid-template-areas: 
+    "header main main"
+    "header main main"
+    "header main main"
+    "header footer footer";
+
+
+    grid-template-columns: 0.5fr 1fr 2fr;
+    grid-template-rows: 80px repeat(2,400px) 80px;
+    justify-content: center;
+   justify-items: center;
+
+   .header{grid-area: header;}
+   .main{grid-area: main;}
+   .footer{grid-area: footer;margin-top: 30px;}
+
+}
+
+.pag-contacto{
+    display: grid;
+    grid-template-areas: 
+    "header main main"
+    "header main main"
+    "header main main"
+    "header footer footer";
+
+
+    grid-template-columns: 0.5fr 1fr 2fr;
+    grid-template-rows: 80px repeat(2,400px) 80px;
+    justify-content: center;
+   justify-items: center;
+
+   .header{grid-area: header;}
+   .main{grid-area: main;}
+   .footer{grid-area: footer;margin-top: 30px;}
+
+}
+.pag-comentarios{
+    display: grid;
+    grid-template-areas: 
+    "header main main"
+    "header main main"
+    "header main main"
+    "header footer footer";
+
+
+    grid-template-columns: 0.5fr 1fr 2fr;
+    grid-template-rows: 80px repeat(2,400px) 80px;
+    justify-content: center;
+   justify-items: center;
+
+   .header{grid-area: header;}
+   .main{grid-area: main;}
+   .footer{grid-area: footer;margin-top: 30px;}
+
+}
+
+/*MEDIA QUERY------------------------------------------------------------------------*/
+
+@media (max-width:500px ) {
+  .pag-home{ 
+    grid-template-areas: 
+     "header"
+     "main" 
+     "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px auto 80px;
+    
+  }
+.header{flex-direction:row; padding: 0;}
+  .header img{ width: 25%;}
+.header ul{flex-direction: row;justify-content:space-evenly; align-items: center; width: 100%;}
+.header a {font-size: 11px; }
+.redes img{width: 30px;}
+
+.fotos{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.fotos img{ width: 80%;}
+.img3{ display: none;}
+
+h1{width: 100%;}
+p {
+    font-size: 16px;
+  }
+
+
+.pag-presupuestos{
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 800px 80px;
+}
+form{
+    font-size: 15px;
+}
+
+
+.pag-contacto{
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 800px 80px;
+}
+
+.pag-productos{
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 800px 80px;
+}
+
+.pag-comentarios{
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 800px 80px;
+}
+}
