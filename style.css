@@ -333,11 +333,11 @@ footer p{
      "main" 
      "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 120px auto 80px;
+    grid-template-rows: 100px auto 80px;
     
   }
 .header{flex-direction:row; padding: 0;}
-  .header img{ width: 25%;}
+  .header img{ width: 20%;}
 .header ul{flex-direction: row;justify-content:space-evenly; align-items: center; width: 100%;}
 .header a {font-size: 10px; }
 .redes img{width: 30px;}
@@ -362,7 +362,7 @@ p {
     "main"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 800px 80px;
+    grid-template-rows: 100px 800px 80px;
 }
 form{
     font-size: 15px;
@@ -375,7 +375,7 @@ form{
     "main"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 800px 80px;
+    grid-template-rows: 100px 800px 80px;
 }
 
 .pag-productos{
@@ -384,8 +384,13 @@ form{
     "main"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 800px 80px;
+    grid-template-rows: 100px 800px 80px;
 
+
+}
+.tarjetas {
+    flex-direction:column;
+    align-items: center;
 }
 
 .pag-comentarios{
@@ -394,6 +399,6 @@ form{
     "main"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 800px 80px;
+    grid-template-rows: 100px 800px 80px;
 }
 }
