@@ -22,7 +22,7 @@ body {
 
 h1 {
     width: 80%;
-    color: rgba(161, 89, 228, 0.767);
+    color: rgba(50, 112, 22, 0.658);
     font-size: 35px;
     font-style: oblique;
     font-family: "Limelight", sans-serif;
@@ -35,9 +35,11 @@ h1 {
 
 
 h2{
-    color: rgba(161, 89, 228, 0.767);
+    color: rgb(50, 112, 22, 0.658);
     font-size: 35px;
     text-align: center;
+    font-family: "Limelight", sans-serif;
+    font-style: oblique;
     margin: 0px;
     background-color:rgba(228, 151, 89, 0.562);
     text-decoration: underline;
@@ -178,7 +180,7 @@ header a {
     color:white;
     font-size: 25px;
     text-decoration: none;
-    background-color: rgba(161, 89, 228, 0.767);;
+    background-color: rgb(50, 112, 22, 0.658);;
 
 
 }
@@ -215,8 +217,8 @@ footer {
 footer p{
     font-family: "Limelight", sans-serif;
     text-align: center;
-    font-style: oblique;
-    color: rgba(161, 89, 228, 0.767);
+    
+    color: rgb(50, 112, 22,0.658 );
     background-color: rgba(228, 151, 89, 0.562);
     padding: 5px;
     }
@@ -392,6 +394,7 @@ form{
     flex-direction:column;
     align-items: center;
 }
+.tarjeta3{display: none;}
 
 .pag-comentarios{
     grid-template-areas: 
