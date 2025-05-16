@@ -339,7 +339,7 @@ footer p{
 .header{flex-direction:row; padding: 0;}
   .header img{ width: 25%;}
 .header ul{flex-direction: row;justify-content:space-evenly; align-items: center; width: 100%;}
-.header a {font-size: 11px; }
+.header a {font-size: 10px; }
 .redes img{width: 30px;}
 
 .fotos{
@@ -385,6 +385,7 @@ form{
     "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 120px 800px 80px;
+
 }
 
 .pag-comentarios{
