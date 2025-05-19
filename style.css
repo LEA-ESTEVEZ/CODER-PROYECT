@@ -99,6 +99,13 @@ width: 30%;
     display: flex;
     justify-content: space-evenly;
 }
+
+.contenidocentral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   /*Pag. Productos*/
 .Productos1{
     display: flex;
