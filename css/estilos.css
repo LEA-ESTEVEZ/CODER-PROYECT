@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgba(255, 127, 24, 0.56);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 10px 20px;
+  width: 100%;
+}
+header img {
+  width: 90%;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+}
+header nav ul li a {
+  font-family: "Limelight", sans-serif;
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  background-color: rgba(50, 112, 22, 0.658);
+}
+
+footer {
+  background-color: rgba(199, 199, 88, 0.733);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+footer p {
+  font-family: "Limelight", sans-serif;
+  text-align: center;
+  color: rgba(50, 112, 22, 0.658);
+  background-color: rgba(228, 151, 89, 0.562);
+  padding: 5px;
+}
+
+main {
+  background-color: rgba(199, 199, 88, 0.733);
+  width: 100%;
+}
+main .redes {
+  display: flex;
+  justify-content: flex-end;
+}
+main .redes img {
+  width: 50px;
+}
+main .titulocentral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+main h1, main h2 {
+  font-family: "Limelight", sans-serif;
+  background-color: rgba(228, 151, 89, 0.562);
+  text-align: center;
+  color: rgba(50, 112, 22, 0.658);
+}
+main h1 {
+  width: 80%;
+  font-size: 35px;
+  font-style: oblique;
+  text-decoration: double underline;
+  padding: 10px;
+}
+main h2 {
+  font-size: 35px;
+  font-style: oblique;
+  margin: 10px;
+  text-decoration: underline;
+}
+main p {
+  color: black;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin: 10px;
+}
+main .fotos {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .fotos img {
+  margin: 50px 0;
+  width: 30%;
+}
+main .contenidocentral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presupuesto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.presupuesto form {
+  background-color: rgba(228, 151, 89, 0.562);
+  color: black;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comentarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.Productos1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.mapa iframe {
+  width: 80%;
+}
+
+.pag-home,
+.pag-presupuestos,
+.pag-productos,
+.pag-contacto,
+.pag-comentarios {
+  display: grid;
+  grid-template-areas: "header main main" "header main main" "header main main" "header footer footer";
+  grid-template-columns: 0.5fr 1fr 2fr;
+  grid-template-rows: 80px repeat(2, 400px) 80px;
+  justify-content: center;
+  justify-items: center;
+}
+.pag-home .header,
+.pag-presupuestos .header,
+.pag-productos .header,
+.pag-contacto .header,
+.pag-comentarios .header {
+  grid-area: header;
+}
+.pag-home .main,
+.pag-presupuestos .main,
+.pag-productos .main,
+.pag-contacto .main,
+.pag-comentarios .main {
+  grid-area: main;
+}
+.pag-home .footer,
+.pag-presupuestos .footer,
+.pag-productos .footer,
+.pag-contacto .footer,
+.pag-comentarios .footer {
+  grid-area: footer;
+}
+
+@media (max-width: 500px) {
+  .pag-home,
+  .pag-presupuestos,
+  .pag-productos,
+  .pag-contacto,
+  .pag-comentarios {
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 800px 80px;
+  }
+  .header {
+    flex-direction: row;
+    padding: 0;
+  }
+  .header img {
+    width: 20%;
+  }
+  .header ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .header a {
+    font-size: 10px;
+  }
+  .redes img {
+    width: 30px;
+  }
+  .fotos {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .fotos img {
+    width: 80%;
+  }
+  .img3, .tarjeta3 {
+    display: none;
+  }
+  h1 {
+    width: 100%;
+  }
+  p {
+    font-size: 16px;
+  }
+  form {
+    font-size: 15px;
+  }
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

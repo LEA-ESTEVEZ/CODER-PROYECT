@@ -1,0 +1,67 @@
+main {
+  background-color: rgba(199, 199, 88, 0.733);
+  width: 100%;
+;
+    .redes {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      width: 50px;
+    }
+  }
+  .titulocentral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  h1, h2 {
+    font-family: "Limelight", sans-serif;
+    background-color: rgba(228, 151, 89, 0.562);
+    text-align: center;
+    color: rgba(50, 112, 22, 0.658);
+  }
+
+  h1 {
+    width: 80%;
+    font-size: 35px;
+    font-style: oblique;
+    text-decoration: double underline;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 35px;
+    font-style: oblique;
+    margin: 10px;
+    text-decoration: underline;
+ 
+  }
+
+
+  p {
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 10px;
+  }
+
+  .fotos {
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+      margin: 50px 0;
+      width: 30%;
+    }
+  }
+
+  .contenidocentral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
