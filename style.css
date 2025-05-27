@@ -113,32 +113,7 @@ width: 30%;
     justify-content: center;
     padding-bottom: 60px
  }
- .picadas img{
-    width: 40%;
-    height: auto;
- }
- .picadas{
-    display: flex;
-    justify-content: center;
-  }
-  .Sandwiches img{
-    width: 40%;
-    height: auto;
 
-  }
-  .Sandwiches{ 
-     display: flex;
-    justify-content: space-around;
-}
-.Empanadas img{
-    width: 40%;
-    height: auto;
- 
-}
-.Empanadas{
-    display: flex;
-    justify-content: space-around;
-}
 
 .tarjetas{ 
     display: flex;
