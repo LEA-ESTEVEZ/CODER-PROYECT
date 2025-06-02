@@ -9,7 +9,7 @@
       "main"
       "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 800px 80px;
+    grid-template-rows: 100px auto 80px;
   }
 
   
@@ -36,7 +36,7 @@
     }
   }
 
-  .fotos {
+  .pag-home .fotos {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -48,13 +48,32 @@
     display: none;
   }
 
-  h1 { width: 100%; }
-  p { font-size: 16px; }
-  form { font-size: 15px; }
+  .titulocentral { 
+    h1 {width: 80%;
+  font-size: 25px;}  }
 
+  .texto {
+    p {
+     font-size: 20px;
+     text-align: center;
+  }
+}
+
+  .comentarios {
+    form {font-size: 20px; }
+   }
+   
+.pag-contacto{h2{font-size: 25px;}}
   .tarjetas {
     flex-direction: column;
     align-items: center;
     width: 50%;
+    p {font-size: 18px;}
   }
+  .presupuesto {
+    form {
+      font-size: 20px;
+      text-align: center;
+    }
+}
 }

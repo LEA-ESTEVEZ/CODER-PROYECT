@@ -10,7 +10,7 @@
     "header main main"
     "header footer footer";
   grid-template-columns: 0.5fr 1fr 2fr;
-  grid-template-rows: 80px repeat(2, 400px) 80px;
+  grid-template-rows: 80px repeat(2, auto) 80px;
   justify-content: center;
   justify-items: center;
 

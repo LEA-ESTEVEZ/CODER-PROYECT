@@ -1,5 +1,6 @@
+@import "variables";
 main {
-  background-color: rgba(199, 199, 88, 0.733);
+  background-color: $beige;
   width: 100%;
 ;
     .redes {
@@ -19,9 +20,9 @@ main {
 
   h1, h2 {
     font-family: "Limelight", sans-serif;
-    background-color: rgba(228, 151, 89, 0.562);
+    background-color:$naranja;
     text-align: center;
-    color: rgba(50, 112, 22, 0.658);
+    color:$verde;
   }
 
   h1 {
@@ -37,6 +38,7 @@ main {
     font-style: oblique;
     margin: 10px;
     text-decoration: underline;
+    margin: 30px;
  
   }
 

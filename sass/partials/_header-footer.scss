@@ -1,5 +1,9 @@
+@import"variables" ;
+
+
+
 header{
-      background-color: rgba(255 127 24 / 56%);
+      background-color:$naranja;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -38,18 +42,19 @@ header{
 }
 
 footer{
-       background-color: rgba(199, 199, 88, 0.733);
+       background-color: $naranja;
        display: flex;
        justify-content: center;
        align-items: center;
        width: 100%;
+       padding: 5px;
 
 
      p {
          font-family: "Limelight", sans-serif;
+         font-size: 20px;
          text-align: center;
-         color: rgb(50, 112, 22,0.658 );
-         background-color: rgba(228, 151, 89, 0.562);
+         color:$verde;
          padding: 5px;
          
        }

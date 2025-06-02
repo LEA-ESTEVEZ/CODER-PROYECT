@@ -1,4 +1,4 @@
-
+@import "variables";
 
   .presupuesto {
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
     padding: 10px;
     form {
-  background-color: rgba(228, 151, 89, 0.562);
+  background-color: $naranja;
   color: black;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
