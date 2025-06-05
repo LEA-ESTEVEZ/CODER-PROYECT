@@ -1,63 +1,78 @@
-@import"variables" ;
+@import "variables";
 
 
 
-header{
-      background-color:$naranja;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      height: auto;
-      padding: 10px 20px;
+header {
+   background-color: $naranja;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   height: auto;
+   padding: 10px 20px;
+   width: 100%;
+
+   img {
+      width: 90%;
+   }
+
+   nav {
+      @include flex;
       width: 100%;
+      height: 100%;
 
-     img{width: 90%;}
+      ul {
+         text-align: center;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         list-style: none;
 
-     nav{   display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-     height: 100%;
-     ul{
-        height: 100%;
-       display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        list-style: none;
-
-        li{
-            a{ font-family: "Limelight", sans-serif;
-               color:white;
-               font-size: 25px;
+         li {
+            a {
+               font-family: "Limelight", sans-serif;
+               color: white;
+               font-size: 20px;
                text-decoration: none;
-               background-color: rgb(50, 112, 22, 0.658)}
-            
 
-          }
-       }
-    }
+               background-color: rgb(50, 112, 22, 0.658);
+               border-radius: 5px;
+               padding: 2px;
+
+            }
+
+            a:hover {
+               color: black;
+
+            }
+         }
+
+         li:hover {
+            transform: scale(1.2, 1.2);
+         }
+      }
+   }
 
 
 }
 
-footer{
-       background-color: $naranja;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       width: 100%;
-       padding: 5px;
+footer {
+   background-color: $naranja;
+   @include flex;
+   width: 100%;
+   padding: 5px;
 
 
-     p {
-         font-family: "Limelight", sans-serif;
-         font-size: 20px;
-         text-align: center;
-         color:$verde;
-         padding: 5px;
-         
-       }
+   p {
+      font-family: "Limelight", sans-serif;
+      font-size: 20px;
+      text-align: center;
+      color: $verde;
+      text-shadow: 2px 1px black;
+      padding: 5px;
+
+   }
 
 
 }

@@ -1,9 +1,11 @@
 @import "variables";
+
 main {
+  background-image: linear-gradient(to top, $naranja, $beige) ;
   background-color: $beige;
   width: 100%;
-;
-    .redes {
+
+  .redes {
     display: flex;
     justify-content: flex-end;
 
@@ -11,18 +13,18 @@ main {
       width: 50px;
     }
   }
+
   .titulocentral {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     margin: 50px 0;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-family: "Limelight", sans-serif;
-    background-color:$naranja;
+    background-color: $naranja;
     text-align: center;
-    color:$verde;
+    color: $verde;
   }
 
   h1 {
@@ -39,7 +41,7 @@ main {
     margin: 10px;
     text-decoration: underline;
     margin: 30px;
- 
+
   }
 
 
@@ -59,6 +61,7 @@ main {
       margin: 50px 0;
       width: 30%;
     }
+
   }
 
   .contenidocentral {

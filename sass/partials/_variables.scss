@@ -4,3 +4,11 @@ $naranja: rgba(255, 115, 0, 0.562);
 $beige:rgba(199, 199, 88, 0.733);
 $verde: rgba(50, 112, 22, 0.658);
 
+//Mixins
+
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
