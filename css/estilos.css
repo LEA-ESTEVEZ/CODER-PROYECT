@@ -73,6 +73,7 @@ main {
 main .redes {
   display: flex;
   justify-content: flex-end;
+  margin: 2px;
 }
 main .redes img {
   width: 50px;
@@ -285,6 +286,19 @@ main .contenidocentral {
   .presupuesto form {
     font-size: 20px;
     text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 978px) {
+  .pag-home .fotos {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pag-home .fotos img {
+    width: 80%;
+  }
+  .img3, .tarjeta3 {
+    display: none;
   }
 }
 

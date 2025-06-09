@@ -77,3 +77,19 @@
     }
 }
 }
+//Media queries para tablet
+
+@media (min-width: 501px) and (max-width: 978px) {
+ 
+
+   .pag-home .fotos {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    img { width: 80%; }
+  }
+    .img3, .tarjeta3 {
+    display: none;
+  }
+}
