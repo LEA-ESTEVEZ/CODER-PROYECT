@@ -67,7 +67,6 @@ footer p {
 
 main {
   background-image: linear-gradient(to top, rgba(255, 115, 0, 0.562), rgba(199, 199, 88, 0.733));
-  background-color: rgba(199, 199, 88, 0.733);
   width: 100%;
 }
 main .redes {
@@ -221,7 +220,7 @@ main .contenidocentral {
   grid-area: footer;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 1px) and (max-width: 500px) {
   .pag-home,
   .pag-presupuestos,
   .pag-productos,
